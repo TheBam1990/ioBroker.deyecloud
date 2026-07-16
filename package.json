@@ -14,6 +14,7 @@
   "scripts": {
     "test": "npm run test:package && npm run check",
     "test:package": "mocha test/package.js --exit",
+    "test:integration": "mocha test/integration.js --exit",
     "check": "node --check main.js",
     "lint": "eslint ."
   },
