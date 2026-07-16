@@ -2,14 +2,119 @@
   "type": "panel",
   "i18n": true,
   "items": {
-    "dataCenter": { "type": "select", "label": "Data center", "options": [{ "label": "Europe", "value": "eu" }, { "label": "Americas", "value": "us" }, { "label": "India", "value": "india" }], "sm": 6 },
-    "appId": { "type": "text", "label": "OpenAPI App ID", "sm": 6 },
-    "appSecret": { "type": "password", "label": "OpenAPI App Secret", "sm": 6 },
-    "loginType": { "type": "select", "label": "Login type", "options": [{ "label": "Email", "value": "email" }, { "label": "Username", "value": "username" }, { "label": "Mobile number", "value": "mobile" }], "sm": 6 },
-    "account": { "type": "text", "label": "DeyeCloud account", "help": "Enter the email address, username or mobile number matching the selected login type.", "sm": 6 },
-    "countryCode": { "type": "text", "label": "Country calling code", "help": "Required only for mobile login, without plus sign.", "sm": 6 },
-    "password": { "type": "password", "label": "DeyeCloud password", "sm": 6 },
-    "companyId": { "type": "text", "label": "Company ID", "help": "Optional. Leave empty for a personal account.", "sm": 6 },
-    "pollInterval": { "type": "number", "label": "Polling interval in seconds", "min": 60, "max": 3600, "sm": 6 }
+    "dataCenter": {
+      "type": "select",
+      "label": "Data center",
+      "options": [
+        {
+          "label": "Europe",
+          "value": "eu"
+        },
+        {
+          "label": "Americas",
+          "value": "us"
+        },
+        {
+          "label": "India",
+          "value": "india"
+        }
+      ],
+      "sm": 6,
+      "xs": 12,
+      "md": 6,
+      "lg": 6,
+      "xl": 6
+    },
+    "appId": {
+      "type": "text",
+      "label": "OpenAPI App ID",
+      "sm": 6,
+      "xs": 12,
+      "md": 6,
+      "lg": 6,
+      "xl": 6
+    },
+    "appSecret": {
+      "type": "password",
+      "label": "OpenAPI App Secret",
+      "sm": 6,
+      "xs": 12,
+      "md": 6,
+      "lg": 6,
+      "xl": 6
+    },
+    "loginType": {
+      "type": "select",
+      "label": "Login type",
+      "options": [
+        {
+          "label": "Email",
+          "value": "email"
+        },
+        {
+          "label": "Username",
+          "value": "username"
+        },
+        {
+          "label": "Mobile number",
+          "value": "mobile"
+        }
+      ],
+      "sm": 6,
+      "xs": 12,
+      "md": 6,
+      "lg": 6,
+      "xl": 6
+    },
+    "account": {
+      "type": "text",
+      "label": "DeyeCloud account",
+      "help": "Enter the email address, username or mobile number matching the selected login type.",
+      "sm": 6,
+      "xs": 12,
+      "md": 6,
+      "lg": 6,
+      "xl": 6
+    },
+    "countryCode": {
+      "type": "text",
+      "label": "Country calling code",
+      "help": "Required only for mobile login, without plus sign.",
+      "sm": 6,
+      "xs": 12,
+      "md": 6,
+      "lg": 6,
+      "xl": 6
+    },
+    "password": {
+      "type": "password",
+      "label": "DeyeCloud password",
+      "sm": 6,
+      "xs": 12,
+      "md": 6,
+      "lg": 6,
+      "xl": 6
+    },
+    "companyId": {
+      "type": "text",
+      "label": "Company ID",
+      "help": "Optional. Leave empty for a personal account.",
+      "sm": 6,
+      "xs": 12,
+      "md": 6,
+      "lg": 6,
+      "xl": 6
+    },
+    "pollInterval": {
+      "type": "number",
+      "label": "Polling interval in seconds",
+      "min": 60,
+      "max": 3600,
+      "sm": 6,
+      "xs": 12,
+      "md": 6,
+      "lg": 6,
+      "xl": 6
+    }
   }
 }
