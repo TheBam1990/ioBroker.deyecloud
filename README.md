@@ -66,6 +66,8 @@ The exact measurement points depend on the inverter model and the data returned 
 - Initial read-only integration with official DeyeCloud OpenAPI authentication.
 - Added station and device discovery with dynamic current-value objects.
 
+Older release notes will be archived in [CHANGELOG_OLD.md](CHANGELOG_OLD.md).
+
 ## License
 
 MIT License

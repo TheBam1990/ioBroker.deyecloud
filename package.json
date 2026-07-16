@@ -2,7 +2,7 @@
   "name": "iobroker.deyecloud",
   "version": "0.1.0",
   "description": "ioBroker adapter for the official DeyeCloud OpenAPI",
-  "keywords": ["iobroker", "deye", "deyecloud", "solar", "inverter", "energy"],
+  "keywords": ["ioBroker", "deye", "deyecloud", "solar", "inverter", "energy"],
   "author": { "name": "TheBam", "email": "elektrobam@gmx.de" },
   "license": "MIT",
   "main": "main.js",
@@ -18,5 +18,5 @@
     "lint": "eslint ."
   },
   "dependencies": { "@iobroker/adapter-core": "^3.4.1" },
-  "devDependencies": { "@eslint/js": "^9.39.1", "@iobroker/testing": "^5.2.2", "@types/node": ">=22", "eslint": "^9.39.1", "globals": "^16.5.0" }
+  "devDependencies": { "@eslint/js": "^9.39.1", "@iobroker/testing": "^5.2.2", "@types/node": "^22.18.0", "eslint": "^9.39.1", "globals": "^16.5.0" }
 }
