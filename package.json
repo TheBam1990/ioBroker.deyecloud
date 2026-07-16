@@ -1,0 +1,21 @@
+{
+  "name": "iobroker.deyecloud",
+  "version": "0.1.0",
+  "description": "ioBroker adapter for the official DeyeCloud OpenAPI",
+  "author": { "name": "TheBam", "email": "elektrobam@gmx.de" },
+  "license": "MIT",
+  "main": "main.js",
+  "repository": { "type": "git", "url": "git+https://github.com/TheBam1990/ioBroker.deyecloud.git" },
+  "homepage": "https://github.com/TheBam1990/ioBroker.deyecloud",
+  "bugs": { "url": "https://github.com/TheBam1990/ioBroker.deyecloud/issues" },
+  "engines": { "node": ">=22" },
+  "files": ["admin", "lib", "io-package.json", "LICENSE", "README.md", "README_DE.md", "main.js"],
+  "scripts": {
+    "test": "npm run test:package && npm run check",
+    "test:package": "mocha test/package.js --exit",
+    "check": "node --check main.js",
+    "lint": "eslint ."
+  },
+  "dependencies": { "@iobroker/adapter-core": "^3.3.2" },
+  "devDependencies": { "@eslint/js": "^9.39.1", "@iobroker/testing": "^5.2.2", "eslint": "^9.39.1", "globals": "^16.5.0" }
+}

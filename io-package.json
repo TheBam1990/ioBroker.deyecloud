@@ -1,0 +1,62 @@
+{
+  "common": {
+    "name": "deyecloud",
+    "version": "0.1.0",
+    "news": {
+      "0.1.0": {
+        "en": "Initial release with official DeyeCloud OpenAPI authentication and read-only station and device monitoring.",
+        "de": "Erste Version mit offizieller DeyeCloud-OpenAPI-Anmeldung und schreibgeschützter Anlagen- und Geräteüberwachung.",
+        "ru": "Первый выпуск с официальной аутентификацией DeyeCloud OpenAPI и мониторингом станций и устройств.",
+        "pt": "Versão inicial com autenticação oficial DeyeCloud OpenAPI e monitorização de estações e dispositivos.",
+        "nl": "Eerste versie met officiële DeyeCloud OpenAPI-authenticatie en bewaking van installaties en apparaten.",
+        "fr": "Première version avec authentification OpenAPI DeyeCloud officielle et surveillance des installations et appareils.",
+        "it": "Versione iniziale con autenticazione OpenAPI DeyeCloud ufficiale e monitoraggio di impianti e dispositivi.",
+        "es": "Versión inicial con autenticación OpenAPI oficial de DeyeCloud y supervisión de plantas y dispositivos.",
+        "pl": "Pierwsza wersja z oficjalnym uwierzytelnianiem DeyeCloud OpenAPI oraz monitorowaniem instalacji i urządzeń.",
+        "uk": "Перший випуск з офіційною автентифікацією DeyeCloud OpenAPI та моніторингом станцій і пристроїв.",
+        "zh-cn": "首个版本，支持官方 DeyeCloud OpenAPI 身份验证以及电站和设备监控。"
+      }
+    },
+    "titleLang": { "en": "DeyeCloud", "de": "DeyeCloud", "ru": "DeyeCloud", "pt": "DeyeCloud", "nl": "DeyeCloud", "fr": "DeyeCloud", "it": "DeyeCloud", "es": "DeyeCloud", "pl": "DeyeCloud", "uk": "DeyeCloud", "zh-cn": "DeyeCloud" },
+    "desc": { "en": "Reads stations, devices and current measurements from the official DeyeCloud OpenAPI.", "de": "Liest Anlagen, Geräte und aktuelle Messwerte aus der offiziellen DeyeCloud OpenAPI.", "ru": "Reads stations, devices and current measurements from the official DeyeCloud OpenAPI.", "pt": "Reads stations, devices and current measurements from the official DeyeCloud OpenAPI.", "nl": "Reads stations, devices and current measurements from the official DeyeCloud OpenAPI.", "fr": "Reads stations, devices and current measurements from the official DeyeCloud OpenAPI.", "it": "Reads stations, devices and current measurements from the official DeyeCloud OpenAPI.", "es": "Reads stations, devices and current measurements from the official DeyeCloud OpenAPI.", "pl": "Reads stations, devices and current measurements from the official DeyeCloud OpenAPI.", "uk": "Reads stations, devices and current measurements from the official DeyeCloud OpenAPI.", "zh-cn": "Reads stations, devices and current measurements from the official DeyeCloud OpenAPI." },
+    "authors": ["TheBam <elektrobam@gmx.de>"],
+    "keywords": ["deye", "deyecloud", "solar", "inverter", "energy"],
+    "licenseInformation": { "type": "free", "license": "MIT" },
+    "platform": "Javascript/Node.js",
+    "main": "main.js",
+    "icon": "deyecloud.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/TheBam1990/ioBroker.deyecloud/main/admin/deyecloud.png",
+    "readme": "https://github.com/TheBam1990/ioBroker.deyecloud/blob/main/README.md",
+    "loglevel": "info",
+    "mode": "daemon",
+    "type": "energy",
+    "tier": 3,
+    "compact": true,
+    "connectionType": "cloud",
+    "dataSource": "poll",
+    "adminUI": { "config": "json" },
+    "dependencies": [{ "js-controller": ">=6.0.11" }],
+    "globalDependencies": [{ "admin": ">=7.6.17" }]
+  },
+  "native": {
+    "dataCenter": "eu",
+    "appId": "",
+    "appSecret": "",
+    "loginType": "email",
+    "account": "",
+    "countryCode": "49",
+    "password": "",
+    "companyId": "",
+    "pollInterval": 300
+  },
+  "encryptedNative": ["appSecret", "password"],
+  "protectedNative": ["appSecret", "password"],
+  "objects": [],
+  "instanceObjects": [
+    { "_id": "info", "type": "channel", "common": { "name": "Information" }, "native": {} },
+    { "_id": "info.connection", "type": "state", "common": { "name": "Connection", "type": "boolean", "role": "indicator.connected", "read": true, "write": false, "def": false }, "native": {} },
+    { "_id": "info.lastUpdate", "type": "state", "common": { "name": "Last successful update", "type": "string", "role": "date", "read": true, "write": false, "def": "" }, "native": {} },
+    { "_id": "info.lastError", "type": "state", "common": { "name": "Last error", "type": "string", "role": "text", "read": true, "write": false, "def": "" }, "native": {} }
+  ]
+}

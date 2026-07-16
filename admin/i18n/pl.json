@@ -1,0 +1,20 @@
+{
+  "Data center": "Data center",
+  "Europe": "Europe",
+  "Americas": "Americas",
+  "India": "India",
+  "OpenAPI App ID": "OpenAPI App ID",
+  "OpenAPI App Secret": "OpenAPI App Secret",
+  "Login type": "Login type",
+  "Email": "Email",
+  "Username": "Username",
+  "Mobile number": "Mobile number",
+  "DeyeCloud account": "DeyeCloud account",
+  "Enter the email address, username or mobile number matching the selected login type.": "Wprowadź adres e-mail, nazwę użytkownika lub numer telefonu zgodny z wybranym typem logowania.",
+  "Country calling code": "Country calling code",
+  "Required only for mobile login, without plus sign.": "Wymagane tylko przy logowaniu telefonem, bez znaku plus.",
+  "DeyeCloud password": "DeyeCloud password",
+  "Company ID": "Company ID",
+  "Optional. Leave empty for a personal account.": "Opcjonalne. Pozostaw puste dla konta osobistego.",
+  "Polling interval in seconds": "Polling interval in seconds"
+}
